@@ -87,11 +87,14 @@ def is_binary(path, blocksize=1024):
     except UnicodeDecodeError:
         # Delay import to hide during wheel/sdist builds that iterate over and
         # import most modules to generate check/keyword/reporter lists.
-        import chardet
+        try:
+            from chardet import detect
+        except ImportError:
+            from charset_normalizer import detect
 
-        # guess character encoding using chardet
-        detected_encoding = chardet.detect(byte_str)
-        if detected_encoding['confidence'] > 0.8:
+        # guess character encoding
+        detected_encoding = detect(byte_str)
+        if detected_encoding['encoding'] and detected_encoding['confidence'] > 0.8:
             try:
                 byte_str.decode(encoding=detected_encoding['encoding'])
                 decodable = True
