@@ -1,0 +1,1079 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>pkgcheck package &#8212; pkgcheck master documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pkgcheck master documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">pkgcheck package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="pkgcheck-package">
+<h1>pkgcheck package<a class="headerlink" href="#pkgcheck-package" title="Permalink to this heading">¶</a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this heading">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pkgcheck.addons.html">pkgcheck.addons package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.addons.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.addons.caches.html">pkgcheck.addons.caches module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.caches.html#pkgcheck.addons.caches.Cache"><code class="docutils literal notranslate"><span class="pre">Cache</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.caches.html#pkgcheck.addons.caches.CacheData"><code class="docutils literal notranslate"><span class="pre">CacheData</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.caches.html#pkgcheck.addons.caches.CacheDisabled"><code class="docutils literal notranslate"><span class="pre">CacheDisabled</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.caches.html#pkgcheck.addons.caches.CachedAddon"><code class="docutils literal notranslate"><span class="pre">CachedAddon</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.caches.html#pkgcheck.addons.caches.DictCache"><code class="docutils literal notranslate"><span class="pre">DictCache</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.addons.eclass.html">pkgcheck.addons.eclass module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.eclass.html#pkgcheck.addons.eclass.Eclass"><code class="docutils literal notranslate"><span class="pre">Eclass</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.eclass.html#pkgcheck.addons.eclass.EclassAddon"><code class="docutils literal notranslate"><span class="pre">EclassAddon</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.addons.git.html">pkgcheck.addons.git module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.git.html#pkgcheck.addons.git.GitAddedRepo"><code class="docutils literal notranslate"><span class="pre">GitAddedRepo</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.git.html#pkgcheck.addons.git.GitAddon"><code class="docutils literal notranslate"><span class="pre">GitAddon</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.git.html#pkgcheck.addons.git.GitCache"><code class="docutils literal notranslate"><span class="pre">GitCache</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.git.html#pkgcheck.addons.git.GitChangedRepo"><code class="docutils literal notranslate"><span class="pre">GitChangedRepo</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.git.html#pkgcheck.addons.git.GitCommit"><code class="docutils literal notranslate"><span class="pre">GitCommit</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.git.html#pkgcheck.addons.git.GitConfig"><code class="docutils literal notranslate"><span class="pre">GitConfig</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.git.html#pkgcheck.addons.git.GitError"><code class="docutils literal notranslate"><span class="pre">GitError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.git.html#pkgcheck.addons.git.GitLog"><code class="docutils literal notranslate"><span class="pre">GitLog</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.git.html#pkgcheck.addons.git.GitModifiedRepo"><code class="docutils literal notranslate"><span class="pre">GitModifiedRepo</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.git.html#pkgcheck.addons.git.GitPkgChange"><code class="docutils literal notranslate"><span class="pre">GitPkgChange</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.git.html#pkgcheck.addons.git.GitRemovedRepo"><code class="docutils literal notranslate"><span class="pre">GitRemovedRepo</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.git.html#pkgcheck.addons.git.GitRepoCommits"><code class="docutils literal notranslate"><span class="pre">GitRepoCommits</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.git.html#pkgcheck.addons.git.GitRepoPkgs"><code class="docutils literal notranslate"><span class="pre">GitRepoPkgs</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.addons.net.html">pkgcheck.addons.net module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.net.html#pkgcheck.addons.net.Session"><code class="docutils literal notranslate"><span class="pre">Session</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.addons.profiles.html">pkgcheck.addons.profiles module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.profiles.html#pkgcheck.addons.profiles.ProfileAddon"><code class="docutils literal notranslate"><span class="pre">ProfileAddon</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.profiles.html#pkgcheck.addons.profiles.ProfileData"><code class="docutils literal notranslate"><span class="pre">ProfileData</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.profiles.html#pkgcheck.addons.profiles.ProfileNode"><code class="docutils literal notranslate"><span class="pre">ProfileNode</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.profiles.html#pkgcheck.addons.profiles.ProfilesArgs"><code class="docutils literal notranslate"><span class="pre">ProfilesArgs</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.addons.html#module-pkgcheck.addons">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.addons.html#pkgcheck.addons.ArchesAddon"><code class="docutils literal notranslate"><span class="pre">ArchesAddon</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.html#pkgcheck.addons.ArchesAddon.mangle_argparser"><code class="docutils literal notranslate"><span class="pre">ArchesAddon.mangle_argparser()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.addons.html#pkgcheck.addons.ArchesArgs"><code class="docutils literal notranslate"><span class="pre">ArchesArgs</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.addons.html#pkgcheck.addons.KeywordsAddon"><code class="docutils literal notranslate"><span class="pre">KeywordsAddon</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.addons.html#pkgcheck.addons.NetAddon"><code class="docutils literal notranslate"><span class="pre">NetAddon</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.html#pkgcheck.addons.NetAddon.mangle_argparser"><code class="docutils literal notranslate"><span class="pre">NetAddon.mangle_argparser()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.html#pkgcheck.addons.NetAddon.session"><code class="docutils literal notranslate"><span class="pre">NetAddon.session</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.addons.html#pkgcheck.addons.StableArchesAddon"><code class="docutils literal notranslate"><span class="pre">StableArchesAddon</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.html#pkgcheck.addons.StableArchesAddon.mangle_argparser"><code class="docutils literal notranslate"><span class="pre">StableArchesAddon.mangle_argparser()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.html#pkgcheck.addons.StableArchesAddon.required_addons"><code class="docutils literal notranslate"><span class="pre">StableArchesAddon.required_addons</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.addons.html#pkgcheck.addons.UnstatedIuse"><code class="docutils literal notranslate"><span class="pre">UnstatedIuse</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.html#pkgcheck.addons.UnstatedIuse.desc"><code class="docutils literal notranslate"><span class="pre">UnstatedIuse.desc</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.html#pkgcheck.addons.UnstatedIuse.name"><code class="docutils literal notranslate"><span class="pre">UnstatedIuse.name</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.addons.html#pkgcheck.addons.UseAddon"><code class="docutils literal notranslate"><span class="pre">UseAddon</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.html#pkgcheck.addons.UseAddon.allowed_iuse"><code class="docutils literal notranslate"><span class="pre">UseAddon.allowed_iuse()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.html#pkgcheck.addons.UseAddon.fake_use_validate"><code class="docutils literal notranslate"><span class="pre">UseAddon.fake_use_validate()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.html#pkgcheck.addons.UseAddon.get_filter"><code class="docutils literal notranslate"><span class="pre">UseAddon.get_filter()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.addons.html#pkgcheck.addons.UseAddon.use_validate"><code class="docutils literal notranslate"><span class="pre">UseAddon.use_validate()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.addons.html#pkgcheck.addons.init_addon"><code class="docutils literal notranslate"><span class="pre">init_addon()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pkgcheck.bash.html">pkgcheck.bash package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.bash.html#module-pkgcheck.bash">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.bash.html#pkgcheck.bash.ParseTree"><code class="docutils literal notranslate"><span class="pre">ParseTree</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.bash.html#pkgcheck.bash.ParseTree.func_query"><code class="docutils literal notranslate"><span class="pre">ParseTree.func_query()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.bash.html#pkgcheck.bash.ParseTree.global_query"><code class="docutils literal notranslate"><span class="pre">ParseTree.global_query()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.bash.html#pkgcheck.bash.ParseTree.node_str"><code class="docutils literal notranslate"><span class="pre">ParseTree.node_str()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.bash.html#pkgcheck.bash.build_library"><code class="docutils literal notranslate"><span class="pre">build_library()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pkgcheck.checks.html">pkgcheck.checks package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.checks.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.acct.html">pkgcheck.checks.acct module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.acct.html#pkgcheck.checks.acct.AcctCheck"><code class="docutils literal notranslate"><span class="pre">AcctCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.acct.html#pkgcheck.checks.acct.ConflictingAccountIdentifiers"><code class="docutils literal notranslate"><span class="pre">ConflictingAccountIdentifiers</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.acct.html#pkgcheck.checks.acct.MissingAccountIdentifier"><code class="docutils literal notranslate"><span class="pre">MissingAccountIdentifier</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.acct.html#pkgcheck.checks.acct.OutsideRangeAccountIdentifier"><code class="docutils literal notranslate"><span class="pre">OutsideRangeAccountIdentifier</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.cleanup.html">pkgcheck.checks.cleanup module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.cleanup.html#pkgcheck.checks.cleanup.RedundantVersion"><code class="docutils literal notranslate"><span class="pre">RedundantVersion</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.cleanup.html#pkgcheck.checks.cleanup.RedundantVersionCheck"><code class="docutils literal notranslate"><span class="pre">RedundantVersionCheck</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.codingstyle.html">pkgcheck.checks.codingstyle module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.AbsoluteSymlink"><code class="docutils literal notranslate"><span class="pre">AbsoluteSymlink</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.AbsoluteSymlinkCheck"><code class="docutils literal notranslate"><span class="pre">AbsoluteSymlinkCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.BadCommandsCheck"><code class="docutils literal notranslate"><span class="pre">BadCommandsCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.BannedEapiCommand"><code class="docutils literal notranslate"><span class="pre">BannedEapiCommand</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.DeprecatedEapiCommand"><code class="docutils literal notranslate"><span class="pre">DeprecatedEapiCommand</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.DeprecatedInsinto"><code class="docutils literal notranslate"><span class="pre">DeprecatedInsinto</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.DoublePrefixInPath"><code class="docutils literal notranslate"><span class="pre">DoublePrefixInPath</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.EbuildUnquotedVariable"><code class="docutils literal notranslate"><span class="pre">EbuildUnquotedVariable</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.EbuildUnquotedVariablesCheck"><code class="docutils literal notranslate"><span class="pre">EbuildUnquotedVariablesCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.EbuildVariableScope"><code class="docutils literal notranslate"><span class="pre">EbuildVariableScope</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.EclassUnquotedVariable"><code class="docutils literal notranslate"><span class="pre">EclassUnquotedVariable</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.EclassUnquotedVariablesCheck"><code class="docutils literal notranslate"><span class="pre">EclassUnquotedVariablesCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.EendMissingArg"><code class="docutils literal notranslate"><span class="pre">EendMissingArg</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.EendMissingArgCheck"><code class="docutils literal notranslate"><span class="pre">EendMissingArgCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.HomepageInSrcUri"><code class="docutils literal notranslate"><span class="pre">HomepageInSrcUri</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.IndirectInherits"><code class="docutils literal notranslate"><span class="pre">IndirectInherits</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.InheritsCheck"><code class="docutils literal notranslate"><span class="pre">InheritsCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.InsintoCheck"><code class="docutils literal notranslate"><span class="pre">InsintoCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.InternalEclassUsage"><code class="docutils literal notranslate"><span class="pre">InternalEclassUsage</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.MetadataVarCheck"><code class="docutils literal notranslate"><span class="pre">MetadataVarCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.MissingInherits"><code class="docutils literal notranslate"><span class="pre">MissingInherits</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.MissingSlash"><code class="docutils literal notranslate"><span class="pre">MissingSlash</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.MultipleKeywordsLines"><code class="docutils literal notranslate"><span class="pre">MultipleKeywordsLines</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.ObsoleteUri"><code class="docutils literal notranslate"><span class="pre">ObsoleteUri</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.ObsoleteUriCheck"><code class="docutils literal notranslate"><span class="pre">ObsoleteUriCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.PathVariablesCheck"><code class="docutils literal notranslate"><span class="pre">PathVariablesCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.ReadonlyVariable"><code class="docutils literal notranslate"><span class="pre">ReadonlyVariable</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.ReadonlyVariableCheck"><code class="docutils literal notranslate"><span class="pre">ReadonlyVariableCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.RedundantDodir"><code class="docutils literal notranslate"><span class="pre">RedundantDodir</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.RedundantDodirCheck"><code class="docutils literal notranslate"><span class="pre">RedundantDodirCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.ReferenceInMetadataVar"><code class="docutils literal notranslate"><span class="pre">ReferenceInMetadataVar</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.StaticSrcUri"><code class="docutils literal notranslate"><span class="pre">StaticSrcUri</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.UnnecessarySlashStrip"><code class="docutils literal notranslate"><span class="pre">UnnecessarySlashStrip</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.UnquotedVariable"><code class="docutils literal notranslate"><span class="pre">UnquotedVariable</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.UnusedInherits"><code class="docutils literal notranslate"><span class="pre">UnusedInherits</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.VariableScope"><code class="docutils literal notranslate"><span class="pre">VariableScope</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.VariableScopeCheck"><code class="docutils literal notranslate"><span class="pre">VariableScopeCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.codingstyle.html#pkgcheck.checks.codingstyle.verify_vars"><code class="docutils literal notranslate"><span class="pre">verify_vars()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.dropped_keywords.html">pkgcheck.checks.dropped_keywords module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.dropped_keywords.html#pkgcheck.checks.dropped_keywords.DroppedKeywords"><code class="docutils literal notranslate"><span class="pre">DroppedKeywords</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.dropped_keywords.html#pkgcheck.checks.dropped_keywords.DroppedKeywordsCheck"><code class="docutils literal notranslate"><span class="pre">DroppedKeywordsCheck</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.eclass.html">pkgcheck.checks.eclass module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.eclass.html#pkgcheck.checks.eclass.DeprecatedEclass"><code class="docutils literal notranslate"><span class="pre">DeprecatedEclass</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.eclass.html#pkgcheck.checks.eclass.DeprecatedEclassFunction"><code class="docutils literal notranslate"><span class="pre">DeprecatedEclassFunction</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.eclass.html#pkgcheck.checks.eclass.DeprecatedEclassVariable"><code class="docutils literal notranslate"><span class="pre">DeprecatedEclassVariable</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.eclass.html#pkgcheck.checks.eclass.DuplicateEclassInherit"><code class="docutils literal notranslate"><span class="pre">DuplicateEclassInherit</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.eclass.html#pkgcheck.checks.eclass.EclassBashSyntaxError"><code class="docutils literal notranslate"><span class="pre">EclassBashSyntaxError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.eclass.html#pkgcheck.checks.eclass.EclassCheck"><code class="docutils literal notranslate"><span class="pre">EclassCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.eclass.html#pkgcheck.checks.eclass.EclassDocError"><code class="docutils literal notranslate"><span class="pre">EclassDocError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.eclass.html#pkgcheck.checks.eclass.EclassDocMissingFunc"><code class="docutils literal notranslate"><span class="pre">EclassDocMissingFunc</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.eclass.html#pkgcheck.checks.eclass.EclassDocMissingVar"><code class="docutils literal notranslate"><span class="pre">EclassDocMissingVar</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.eclass.html#pkgcheck.checks.eclass.EclassExportFuncsBeforeInherit"><code class="docutils literal notranslate"><span class="pre">EclassExportFuncsBeforeInherit</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.eclass.html#pkgcheck.checks.eclass.EclassParseCheck"><code class="docutils literal notranslate"><span class="pre">EclassParseCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.eclass.html#pkgcheck.checks.eclass.EclassUsageCheck"><code class="docutils literal notranslate"><span class="pre">EclassUsageCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.eclass.html#pkgcheck.checks.eclass.EclassVariableScope"><code class="docutils literal notranslate"><span class="pre">EclassVariableScope</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.eclass.html#pkgcheck.checks.eclass.MisplacedEclassVar"><code class="docutils literal notranslate"><span class="pre">MisplacedEclassVar</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.git.html">pkgcheck.checks.git module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.git.html#pkgcheck.checks.git.BadCommitSummary"><code class="docutils literal notranslate"><span class="pre">BadCommitSummary</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.git.html#pkgcheck.checks.git.DirectNoMaintainer"><code class="docutils literal notranslate"><span class="pre">DirectNoMaintainer</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.git.html#pkgcheck.checks.git.DirectStableKeywords"><code class="docutils literal notranslate"><span class="pre">DirectStableKeywords</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.git.html#pkgcheck.checks.git.DroppedStableKeywords"><code class="docutils literal notranslate"><span class="pre">DroppedStableKeywords</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.git.html#pkgcheck.checks.git.DroppedUnstableKeywords"><code class="docutils literal notranslate"><span class="pre">DroppedUnstableKeywords</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.git.html#pkgcheck.checks.git.EbuildIncorrectCopyright"><code class="docutils literal notranslate"><span class="pre">EbuildIncorrectCopyright</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.git.html#pkgcheck.checks.git.EclassIncorrectCopyright"><code class="docutils literal notranslate"><span class="pre">EclassIncorrectCopyright</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.git.html#pkgcheck.checks.git.GitCommitMessageCheck"><code class="docutils literal notranslate"><span class="pre">GitCommitMessageCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.git.html#pkgcheck.checks.git.GitCommitsRepoSource"><code class="docutils literal notranslate"><span class="pre">GitCommitsRepoSource</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.git.html#pkgcheck.checks.git.GitCommitsSource"><code class="docutils literal notranslate"><span class="pre">GitCommitsSource</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.git.html#pkgcheck.checks.git.GitEclassCommitsCheck"><code class="docutils literal notranslate"><span class="pre">GitEclassCommitsCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.git.html#pkgcheck.checks.git.GitPkgCommitsCheck"><code class="docutils literal notranslate"><span class="pre">GitPkgCommitsCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.git.html#pkgcheck.checks.git.IncorrectCopyright"><code class="docutils literal notranslate"><span class="pre">IncorrectCopyright</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.git.html#pkgcheck.checks.git.InvalidCommitMessage"><code class="docutils literal notranslate"><span class="pre">InvalidCommitMessage</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.git.html#pkgcheck.checks.git.InvalidCommitTag"><code class="docutils literal notranslate"><span class="pre">InvalidCommitTag</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.git.html#pkgcheck.checks.git.MissingMove"><code class="docutils literal notranslate"><span class="pre">MissingMove</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.git.html#pkgcheck.checks.git.MissingSignOff"><code class="docutils literal notranslate"><span class="pre">MissingSignOff</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.git.html#pkgcheck.checks.git.MissingSlotmove"><code class="docutils literal notranslate"><span class="pre">MissingSlotmove</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.git.html#pkgcheck.checks.git.RdependChange"><code class="docutils literal notranslate"><span class="pre">RdependChange</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.git.html#pkgcheck.checks.git.verify_tags"><code class="docutils literal notranslate"><span class="pre">verify_tags()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.glsa.html">pkgcheck.checks.glsa module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.glsa.html#pkgcheck.checks.glsa.GlsaCheck"><code class="docutils literal notranslate"><span class="pre">GlsaCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.glsa.html#pkgcheck.checks.glsa.VulnerablePackage"><code class="docutils literal notranslate"><span class="pre">VulnerablePackage</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.header.html">pkgcheck.checks.header module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.header.html#pkgcheck.checks.header.EbuildHeaderCheck"><code class="docutils literal notranslate"><span class="pre">EbuildHeaderCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.header.html#pkgcheck.checks.header.EbuildInvalidCopyright"><code class="docutils literal notranslate"><span class="pre">EbuildInvalidCopyright</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.header.html#pkgcheck.checks.header.EbuildInvalidLicenseHeader"><code class="docutils literal notranslate"><span class="pre">EbuildInvalidLicenseHeader</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.header.html#pkgcheck.checks.header.EbuildNonGentooAuthorsCopyright"><code class="docutils literal notranslate"><span class="pre">EbuildNonGentooAuthorsCopyright</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.header.html#pkgcheck.checks.header.EbuildOldGentooCopyright"><code class="docutils literal notranslate"><span class="pre">EbuildOldGentooCopyright</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.header.html#pkgcheck.checks.header.EclassHeaderCheck"><code class="docutils literal notranslate"><span class="pre">EclassHeaderCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.header.html#pkgcheck.checks.header.EclassInvalidCopyright"><code class="docutils literal notranslate"><span class="pre">EclassInvalidCopyright</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.header.html#pkgcheck.checks.header.EclassInvalidLicenseHeader"><code class="docutils literal notranslate"><span class="pre">EclassInvalidLicenseHeader</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.header.html#pkgcheck.checks.header.EclassNonGentooAuthorsCopyright"><code class="docutils literal notranslate"><span class="pre">EclassNonGentooAuthorsCopyright</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.header.html#pkgcheck.checks.header.EclassOldGentooCopyright"><code class="docutils literal notranslate"><span class="pre">EclassOldGentooCopyright</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.header.html#pkgcheck.checks.header.InvalidCopyright"><code class="docutils literal notranslate"><span class="pre">InvalidCopyright</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.header.html#pkgcheck.checks.header.InvalidLicenseHeader"><code class="docutils literal notranslate"><span class="pre">InvalidLicenseHeader</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.header.html#pkgcheck.checks.header.NonGentooAuthorsCopyright"><code class="docutils literal notranslate"><span class="pre">NonGentooAuthorsCopyright</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.header.html#pkgcheck.checks.header.OldGentooCopyright"><code class="docutils literal notranslate"><span class="pre">OldGentooCopyright</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.imlate.html">pkgcheck.checks.imlate module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.imlate.html#pkgcheck.checks.imlate.ImlateCheck"><code class="docutils literal notranslate"><span class="pre">ImlateCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.imlate.html#pkgcheck.checks.imlate.LaggingStable"><code class="docutils literal notranslate"><span class="pre">LaggingStable</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.imlate.html#pkgcheck.checks.imlate.PotentialStable"><code class="docutils literal notranslate"><span class="pre">PotentialStable</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.metadata.html">pkgcheck.checks.metadata module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.BadDefaultUseFlags"><code class="docutils literal notranslate"><span class="pre">BadDefaultUseFlags</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.BadDependency"><code class="docutils literal notranslate"><span class="pre">BadDependency</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.BadDescription"><code class="docutils literal notranslate"><span class="pre">BadDescription</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.BadFilename"><code class="docutils literal notranslate"><span class="pre">BadFilename</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.BadHomepage"><code class="docutils literal notranslate"><span class="pre">BadHomepage</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.BadKeywords"><code class="docutils literal notranslate"><span class="pre">BadKeywords</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.BadProtocol"><code class="docutils literal notranslate"><span class="pre">BadProtocol</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.BannedEapi"><code class="docutils literal notranslate"><span class="pre">BannedEapi</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.DependencyCheck"><code class="docutils literal notranslate"><span class="pre">DependencyCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.DeprecatedDep"><code class="docutils literal notranslate"><span class="pre">DeprecatedDep</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.DeprecatedEapi"><code class="docutils literal notranslate"><span class="pre">DeprecatedEapi</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.DeprecatedLicense"><code class="docutils literal notranslate"><span class="pre">DeprecatedLicense</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.DescriptionCheck"><code class="docutils literal notranslate"><span class="pre">DescriptionCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.DuplicateKeywords"><code class="docutils literal notranslate"><span class="pre">DuplicateKeywords</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.EapiCheck"><code class="docutils literal notranslate"><span class="pre">EapiCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.HomepageCheck"><code class="docutils literal notranslate"><span class="pre">HomepageCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.InvalidBdepend"><code class="docutils literal notranslate"><span class="pre">InvalidBdepend</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.InvalidDepend"><code class="docutils literal notranslate"><span class="pre">InvalidDepend</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.InvalidEapi"><code class="docutils literal notranslate"><span class="pre">InvalidEapi</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.InvalidIdepend"><code class="docutils literal notranslate"><span class="pre">InvalidIdepend</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.InvalidLicense"><code class="docutils literal notranslate"><span class="pre">InvalidLicense</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.InvalidPdepend"><code class="docutils literal notranslate"><span class="pre">InvalidPdepend</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.InvalidProperties"><code class="docutils literal notranslate"><span class="pre">InvalidProperties</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.InvalidRdepend"><code class="docutils literal notranslate"><span class="pre">InvalidRdepend</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.InvalidRequiredUse"><code class="docutils literal notranslate"><span class="pre">InvalidRequiredUse</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.InvalidRestrict"><code class="docutils literal notranslate"><span class="pre">InvalidRestrict</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.InvalidSlot"><code class="docutils literal notranslate"><span class="pre">InvalidSlot</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.InvalidSrcUri"><code class="docutils literal notranslate"><span class="pre">InvalidSrcUri</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.InvalidUseFlags"><code class="docutils literal notranslate"><span class="pre">InvalidUseFlags</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.IuseCheck"><code class="docutils literal notranslate"><span class="pre">IuseCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.KeywordsCheck"><code class="docutils literal notranslate"><span class="pre">KeywordsCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.LicenseCheck"><code class="docutils literal notranslate"><span class="pre">LicenseCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.LocalUseCheck"><code class="docutils literal notranslate"><span class="pre">LocalUseCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.MatchingGlobalUse"><code class="docutils literal notranslate"><span class="pre">MatchingGlobalUse</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.MisplacedWeakBlocker"><code class="docutils literal notranslate"><span class="pre">MisplacedWeakBlocker</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.MissingLicense"><code class="docutils literal notranslate"><span class="pre">MissingLicense</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.MissingLicenseRestricts"><code class="docutils literal notranslate"><span class="pre">MissingLicenseRestricts</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.MissingLocalUseDesc"><code class="docutils literal notranslate"><span class="pre">MissingLocalUseDesc</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.MissingPackageRevision"><code class="docutils literal notranslate"><span class="pre">MissingPackageRevision</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.MissingSlotDep"><code class="docutils literal notranslate"><span class="pre">MissingSlotDep</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.MissingSlotDepCheck"><code class="docutils literal notranslate"><span class="pre">MissingSlotDepCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.MissingTestRestrict"><code class="docutils literal notranslate"><span class="pre">MissingTestRestrict</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.MissingUnpackerDep"><code class="docutils literal notranslate"><span class="pre">MissingUnpackerDep</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.MissingUnpackerDepCheck"><code class="docutils literal notranslate"><span class="pre">MissingUnpackerDepCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.MissingUri"><code class="docutils literal notranslate"><span class="pre">MissingUri</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.MissingUseDepDefault"><code class="docutils literal notranslate"><span class="pre">MissingUseDepDefault</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.NonexistentBlocker"><code class="docutils literal notranslate"><span class="pre">NonexistentBlocker</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.OutdatedBlocker"><code class="docutils literal notranslate"><span class="pre">OutdatedBlocker</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.OutdatedBlockersCheck"><code class="docutils literal notranslate"><span class="pre">OutdatedBlockersCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.OverlappingKeywords"><code class="docutils literal notranslate"><span class="pre">OverlappingKeywords</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.ProbableGlobalUse"><code class="docutils literal notranslate"><span class="pre">ProbableGlobalUse</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.ProbableUseExpand"><code class="docutils literal notranslate"><span class="pre">ProbableUseExpand</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.PropertiesCheck"><code class="docutils literal notranslate"><span class="pre">PropertiesCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.RedundantUriRename"><code class="docutils literal notranslate"><span class="pre">RedundantUriRename</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.RequiredUseCheck"><code class="docutils literal notranslate"><span class="pre">RequiredUseCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.RequiredUseDefaults"><code class="docutils literal notranslate"><span class="pre">RequiredUseDefaults</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.RestrictCheck"><code class="docutils literal notranslate"><span class="pre">RestrictCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.RestrictTestCheck"><code class="docutils literal notranslate"><span class="pre">RestrictTestCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.SourcingCheck"><code class="docutils literal notranslate"><span class="pre">SourcingCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.SourcingError"><code class="docutils literal notranslate"><span class="pre">SourcingError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.SrcUriCheck"><code class="docutils literal notranslate"><span class="pre">SrcUriCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.StableKeywordsOnTestingEapi"><code class="docutils literal notranslate"><span class="pre">StableKeywordsOnTestingEapi</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.TarballAvailable"><code class="docutils literal notranslate"><span class="pre">TarballAvailable</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.UnderscoreInUseFlag"><code class="docutils literal notranslate"><span class="pre">UnderscoreInUseFlag</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.UnknownKeywords"><code class="docutils literal notranslate"><span class="pre">UnknownKeywords</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.UnknownLicense"><code class="docutils literal notranslate"><span class="pre">UnknownLicense</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.UnknownMirror"><code class="docutils literal notranslate"><span class="pre">UnknownMirror</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.UnknownProperties"><code class="docutils literal notranslate"><span class="pre">UnknownProperties</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.UnknownRestrict"><code class="docutils literal notranslate"><span class="pre">UnknownRestrict</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.UnknownUseFlags"><code class="docutils literal notranslate"><span class="pre">UnknownUseFlags</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.UnnecessaryLicense"><code class="docutils literal notranslate"><span class="pre">UnnecessaryLicense</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.UnsortedKeywords"><code class="docutils literal notranslate"><span class="pre">UnsortedKeywords</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.UnsupportedEclassEapi"><code class="docutils literal notranslate"><span class="pre">UnsupportedEclassEapi</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.UnusedLocalUse"><code class="docutils literal notranslate"><span class="pre">UnusedLocalUse</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.UseFlagWithoutDeps"><code class="docutils literal notranslate"><span class="pre">UseFlagWithoutDeps</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.UseFlagsWithoutEffectsCheck"><code class="docutils literal notranslate"><span class="pre">UseFlagsWithoutEffectsCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata.html#pkgcheck.checks.metadata.VirtualKeywordsUpdate"><code class="docutils literal notranslate"><span class="pre">VirtualKeywordsUpdate</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.metadata_xml.html">pkgcheck.checks.metadata_xml module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata_xml.html#pkgcheck.checks.metadata_xml.CatBadlyFormedXml"><code class="docutils literal notranslate"><span class="pre">CatBadlyFormedXml</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata_xml.html#pkgcheck.checks.metadata_xml.CatInvalidXml"><code class="docutils literal notranslate"><span class="pre">CatInvalidXml</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata_xml.html#pkgcheck.checks.metadata_xml.CatMetadataXmlEmptyElement"><code class="docutils literal notranslate"><span class="pre">CatMetadataXmlEmptyElement</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata_xml.html#pkgcheck.checks.metadata_xml.CatMetadataXmlIndentation"><code class="docutils literal notranslate"><span class="pre">CatMetadataXmlIndentation</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata_xml.html#pkgcheck.checks.metadata_xml.CatMetadataXmlInvalidCatRef"><code class="docutils literal notranslate"><span class="pre">CatMetadataXmlInvalidCatRef</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata_xml.html#pkgcheck.checks.metadata_xml.CatMetadataXmlInvalidPkgRef"><code class="docutils literal notranslate"><span class="pre">CatMetadataXmlInvalidPkgRef</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata_xml.html#pkgcheck.checks.metadata_xml.CatMissingMetadataXml"><code class="docutils literal notranslate"><span class="pre">CatMissingMetadataXml</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata_xml.html#pkgcheck.checks.metadata_xml.CategoryMetadataXmlCheck"><code class="docutils literal notranslate"><span class="pre">CategoryMetadataXmlCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata_xml.html#pkgcheck.checks.metadata_xml.InvalidRemoteID"><code class="docutils literal notranslate"><span class="pre">InvalidRemoteID</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata_xml.html#pkgcheck.checks.metadata_xml.MaintainerNeeded"><code class="docutils literal notranslate"><span class="pre">MaintainerNeeded</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata_xml.html#pkgcheck.checks.metadata_xml.MaintainerWithoutProxy"><code class="docutils literal notranslate"><span class="pre">MaintainerWithoutProxy</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata_xml.html#pkgcheck.checks.metadata_xml.NonexistentProjectMaintainer"><code class="docutils literal notranslate"><span class="pre">NonexistentProjectMaintainer</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata_xml.html#pkgcheck.checks.metadata_xml.PackageMetadataXmlCheck"><code class="docutils literal notranslate"><span class="pre">PackageMetadataXmlCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata_xml.html#pkgcheck.checks.metadata_xml.PkgBadlyFormedXml"><code class="docutils literal notranslate"><span class="pre">PkgBadlyFormedXml</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata_xml.html#pkgcheck.checks.metadata_xml.PkgInvalidXml"><code class="docutils literal notranslate"><span class="pre">PkgInvalidXml</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata_xml.html#pkgcheck.checks.metadata_xml.PkgMetadataXmlEmptyElement"><code class="docutils literal notranslate"><span class="pre">PkgMetadataXmlEmptyElement</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata_xml.html#pkgcheck.checks.metadata_xml.PkgMetadataXmlIndentation"><code class="docutils literal notranslate"><span class="pre">PkgMetadataXmlIndentation</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata_xml.html#pkgcheck.checks.metadata_xml.PkgMetadataXmlInvalidCatRef"><code class="docutils literal notranslate"><span class="pre">PkgMetadataXmlInvalidCatRef</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata_xml.html#pkgcheck.checks.metadata_xml.PkgMetadataXmlInvalidPkgRef"><code class="docutils literal notranslate"><span class="pre">PkgMetadataXmlInvalidPkgRef</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata_xml.html#pkgcheck.checks.metadata_xml.PkgMissingMetadataXml"><code class="docutils literal notranslate"><span class="pre">PkgMissingMetadataXml</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata_xml.html#pkgcheck.checks.metadata_xml.ProxyWithoutProxied"><code class="docutils literal notranslate"><span class="pre">ProxyWithoutProxied</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata_xml.html#pkgcheck.checks.metadata_xml.RedundantLongDescription"><code class="docutils literal notranslate"><span class="pre">RedundantLongDescription</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.metadata_xml.html#pkgcheck.checks.metadata_xml.WrongMaintainerType"><code class="docutils literal notranslate"><span class="pre">WrongMaintainerType</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.network.html">pkgcheck.checks.network module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.network.html#pkgcheck.checks.network.DeadUrl"><code class="docutils literal notranslate"><span class="pre">DeadUrl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.network.html#pkgcheck.checks.network.FetchablesUrlCheck"><code class="docutils literal notranslate"><span class="pre">FetchablesUrlCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.network.html#pkgcheck.checks.network.HomepageUrlCheck"><code class="docutils literal notranslate"><span class="pre">HomepageUrlCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.network.html#pkgcheck.checks.network.HttpsUrlAvailable"><code class="docutils literal notranslate"><span class="pre">HttpsUrlAvailable</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.network.html#pkgcheck.checks.network.MetadataUrlCheck"><code class="docutils literal notranslate"><span class="pre">MetadataUrlCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.network.html#pkgcheck.checks.network.RedirectedUrl"><code class="docutils literal notranslate"><span class="pre">RedirectedUrl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.network.html#pkgcheck.checks.network.RequestError"><code class="docutils literal notranslate"><span class="pre">RequestError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.network.html#pkgcheck.checks.network.SSLCertificateError"><code class="docutils literal notranslate"><span class="pre">SSLCertificateError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.network.html#pkgcheck.checks.network.SSLError"><code class="docutils literal notranslate"><span class="pre">SSLError</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.overlays.html">pkgcheck.checks.overlays module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.overlays.html#pkgcheck.checks.overlays.UnusedInMastersCheck"><code class="docutils literal notranslate"><span class="pre">UnusedInMastersCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.overlays.html#pkgcheck.checks.overlays.UnusedInMastersEclasses"><code class="docutils literal notranslate"><span class="pre">UnusedInMastersEclasses</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.overlays.html#pkgcheck.checks.overlays.UnusedInMastersGlobalUse"><code class="docutils literal notranslate"><span class="pre">UnusedInMastersGlobalUse</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.overlays.html#pkgcheck.checks.overlays.UnusedInMastersLicenses"><code class="docutils literal notranslate"><span class="pre">UnusedInMastersLicenses</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.overlays.html#pkgcheck.checks.overlays.UnusedInMastersMirrors"><code class="docutils literal notranslate"><span class="pre">UnusedInMastersMirrors</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.perl.html">pkgcheck.checks.perl module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.perl.html#pkgcheck.checks.perl.MismatchedPerlVersion"><code class="docutils literal notranslate"><span class="pre">MismatchedPerlVersion</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.perl.html#pkgcheck.checks.perl.PerlCheck"><code class="docutils literal notranslate"><span class="pre">PerlCheck</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.pkgdir.html">pkgcheck.checks.pkgdir module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.pkgdir.html#pkgcheck.checks.pkgdir.BannedCharacter"><code class="docutils literal notranslate"><span class="pre">BannedCharacter</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.pkgdir.html#pkgcheck.checks.pkgdir.DuplicateFiles"><code class="docutils literal notranslate"><span class="pre">DuplicateFiles</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.pkgdir.html#pkgcheck.checks.pkgdir.EmptyFile"><code class="docutils literal notranslate"><span class="pre">EmptyFile</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.pkgdir.html#pkgcheck.checks.pkgdir.EqualVersions"><code class="docutils literal notranslate"><span class="pre">EqualVersions</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.pkgdir.html#pkgcheck.checks.pkgdir.EqualVersionsCheck"><code class="docutils literal notranslate"><span class="pre">EqualVersionsCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.pkgdir.html#pkgcheck.checks.pkgdir.ExecutableFile"><code class="docutils literal notranslate"><span class="pre">ExecutableFile</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.pkgdir.html#pkgcheck.checks.pkgdir.InvalidPN"><code class="docutils literal notranslate"><span class="pre">InvalidPN</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.pkgdir.html#pkgcheck.checks.pkgdir.InvalidUTF8"><code class="docutils literal notranslate"><span class="pre">InvalidUTF8</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.pkgdir.html#pkgcheck.checks.pkgdir.LiveOnlyCheck"><code class="docutils literal notranslate"><span class="pre">LiveOnlyCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.pkgdir.html#pkgcheck.checks.pkgdir.LiveOnlyPackage"><code class="docutils literal notranslate"><span class="pre">LiveOnlyPackage</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.pkgdir.html#pkgcheck.checks.pkgdir.MismatchedPN"><code class="docutils literal notranslate"><span class="pre">MismatchedPN</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.pkgdir.html#pkgcheck.checks.pkgdir.PkgDirCheck"><code class="docutils literal notranslate"><span class="pre">PkgDirCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.pkgdir.html#pkgcheck.checks.pkgdir.SizeViolation"><code class="docutils literal notranslate"><span class="pre">SizeViolation</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.pkgdir.html#pkgcheck.checks.pkgdir.TotalSizeViolation"><code class="docutils literal notranslate"><span class="pre">TotalSizeViolation</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.pkgdir.html#pkgcheck.checks.pkgdir.UnknownPkgDirEntry"><code class="docutils literal notranslate"><span class="pre">UnknownPkgDirEntry</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.profiles.html">pkgcheck.checks.profiles module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.profiles.html#pkgcheck.checks.profiles.ArchesWithoutProfiles"><code class="docutils literal notranslate"><span class="pre">ArchesWithoutProfiles</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.profiles.html#pkgcheck.checks.profiles.BannedProfileEapi"><code class="docutils literal notranslate"><span class="pre">BannedProfileEapi</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.profiles.html#pkgcheck.checks.profiles.DeprecatedProfileEapi"><code class="docutils literal notranslate"><span class="pre">DeprecatedProfileEapi</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.profiles.html#pkgcheck.checks.profiles.LaggingProfileEapi"><code class="docutils literal notranslate"><span class="pre">LaggingProfileEapi</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.profiles.html#pkgcheck.checks.profiles.NonexistentCategories"><code class="docutils literal notranslate"><span class="pre">NonexistentCategories</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.profiles.html#pkgcheck.checks.profiles.NonexistentProfilePath"><code class="docutils literal notranslate"><span class="pre">NonexistentProfilePath</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.profiles.html#pkgcheck.checks.profiles.ProfileError"><code class="docutils literal notranslate"><span class="pre">ProfileError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.profiles.html#pkgcheck.checks.profiles.ProfileWarning"><code class="docutils literal notranslate"><span class="pre">ProfileWarning</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.profiles.html#pkgcheck.checks.profiles.ProfilesCheck"><code class="docutils literal notranslate"><span class="pre">ProfilesCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.profiles.html#pkgcheck.checks.profiles.RepoProfilesCheck"><code class="docutils literal notranslate"><span class="pre">RepoProfilesCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.profiles.html#pkgcheck.checks.profiles.UnknownCategoryDirs"><code class="docutils literal notranslate"><span class="pre">UnknownCategoryDirs</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.profiles.html#pkgcheck.checks.profiles.UnknownProfilePackage"><code class="docutils literal notranslate"><span class="pre">UnknownProfilePackage</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.profiles.html#pkgcheck.checks.profiles.UnknownProfilePackageKeywords"><code class="docutils literal notranslate"><span class="pre">UnknownProfilePackageKeywords</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.profiles.html#pkgcheck.checks.profiles.UnknownProfilePackageUse"><code class="docutils literal notranslate"><span class="pre">UnknownProfilePackageUse</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.profiles.html#pkgcheck.checks.profiles.UnknownProfileUse"><code class="docutils literal notranslate"><span class="pre">UnknownProfileUse</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.profiles.html#pkgcheck.checks.profiles.UnknownProfileUseExpand"><code class="docutils literal notranslate"><span class="pre">UnknownProfileUseExpand</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.profiles.html#pkgcheck.checks.profiles.UnusedProfileDirs"><code class="docutils literal notranslate"><span class="pre">UnusedProfileDirs</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.profiles.html#pkgcheck.checks.profiles.dir_parents"><code class="docutils literal notranslate"><span class="pre">dir_parents()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.profiles.html#pkgcheck.checks.profiles.verify_files"><code class="docutils literal notranslate"><span class="pre">verify_files()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.python.html">pkgcheck.checks.python module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.python.html#pkgcheck.checks.python.MissingPythonEclass"><code class="docutils literal notranslate"><span class="pre">MissingPythonEclass</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.python.html#pkgcheck.checks.python.PythonAnyMismatchedDepHasVersionCheck"><code class="docutils literal notranslate"><span class="pre">PythonAnyMismatchedDepHasVersionCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.python.html#pkgcheck.checks.python.PythonAnyMismatchedUseHasVersionCheck"><code class="docutils literal notranslate"><span class="pre">PythonAnyMismatchedUseHasVersionCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.python.html#pkgcheck.checks.python.PythonCheck"><code class="docutils literal notranslate"><span class="pre">PythonCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.python.html#pkgcheck.checks.python.PythonCompatCheck"><code class="docutils literal notranslate"><span class="pre">PythonCompatCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.python.html#pkgcheck.checks.python.PythonCompatUpdate"><code class="docutils literal notranslate"><span class="pre">PythonCompatUpdate</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.python.html#pkgcheck.checks.python.PythonEclassError"><code class="docutils literal notranslate"><span class="pre">PythonEclassError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.python.html#pkgcheck.checks.python.PythonGHDistfileSuffix"><code class="docutils literal notranslate"><span class="pre">PythonGHDistfileSuffix</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.python.html#pkgcheck.checks.python.PythonGHDistfileSuffixCheck"><code class="docutils literal notranslate"><span class="pre">PythonGHDistfileSuffixCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.python.html#pkgcheck.checks.python.PythonHasVersionMissingPythonUseDep"><code class="docutils literal notranslate"><span class="pre">PythonHasVersionMissingPythonUseDep</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.python.html#pkgcheck.checks.python.PythonHasVersionUsage"><code class="docutils literal notranslate"><span class="pre">PythonHasVersionUsage</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.python.html#pkgcheck.checks.python.PythonMissingDeps"><code class="docutils literal notranslate"><span class="pre">PythonMissingDeps</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.python.html#pkgcheck.checks.python.PythonMissingRequiredUse"><code class="docutils literal notranslate"><span class="pre">PythonMissingRequiredUse</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.python.html#pkgcheck.checks.python.PythonRuntimeDepInAnyR1"><code class="docutils literal notranslate"><span class="pre">PythonRuntimeDepInAnyR1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.python.html#pkgcheck.checks.python.PythonWrongUsageCheck"><code class="docutils literal notranslate"><span class="pre">PythonWrongUsageCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.python.html#pkgcheck.checks.python.get_python_eclass"><code class="docutils literal notranslate"><span class="pre">get_python_eclass()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.repo.html">pkgcheck.checks.repo module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo.html#pkgcheck.checks.repo.BinaryFile"><code class="docutils literal notranslate"><span class="pre">BinaryFile</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo.html#pkgcheck.checks.repo.EmptyCategoryDir"><code class="docutils literal notranslate"><span class="pre">EmptyCategoryDir</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo.html#pkgcheck.checks.repo.EmptyDirsCheck"><code class="docutils literal notranslate"><span class="pre">EmptyDirsCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo.html#pkgcheck.checks.repo.EmptyPackageDir"><code class="docutils literal notranslate"><span class="pre">EmptyPackageDir</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo.html#pkgcheck.checks.repo.RepoDirCheck"><code class="docutils literal notranslate"><span class="pre">RepoDirCheck</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html">pkgcheck.checks.repo_metadata module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.BadPackageUpdate"><code class="docutils literal notranslate"><span class="pre">BadPackageUpdate</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.ConflictingChksums"><code class="docutils literal notranslate"><span class="pre">ConflictingChksums</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.DeprecatedChksum"><code class="docutils literal notranslate"><span class="pre">DeprecatedChksum</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.EmptyProject"><code class="docutils literal notranslate"><span class="pre">EmptyProject</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.GlobalUseCheck"><code class="docutils literal notranslate"><span class="pre">GlobalUseCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.InvalidManifest"><code class="docutils literal notranslate"><span class="pre">InvalidManifest</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.LicenseGroupsCheck"><code class="docutils literal notranslate"><span class="pre">LicenseGroupsCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.ManifestCheck"><code class="docutils literal notranslate"><span class="pre">ManifestCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.ManifestCollisionCheck"><code class="docutils literal notranslate"><span class="pre">ManifestCollisionCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.MatchingChksums"><code class="docutils literal notranslate"><span class="pre">MatchingChksums</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.MissingChksum"><code class="docutils literal notranslate"><span class="pre">MissingChksum</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.MissingManifest"><code class="docutils literal notranslate"><span class="pre">MissingManifest</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.MovedPackageUpdate"><code class="docutils literal notranslate"><span class="pre">MovedPackageUpdate</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.MultiMovePackageUpdate"><code class="docutils literal notranslate"><span class="pre">MultiMovePackageUpdate</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.OldMultiMovePackageUpdate"><code class="docutils literal notranslate"><span class="pre">OldMultiMovePackageUpdate</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.OldPackageUpdate"><code class="docutils literal notranslate"><span class="pre">OldPackageUpdate</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.PackageUpdatesCheck"><code class="docutils literal notranslate"><span class="pre">PackageUpdatesCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.PotentialGlobalUse"><code class="docutils literal notranslate"><span class="pre">PotentialGlobalUse</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.PotentialLocalUse"><code class="docutils literal notranslate"><span class="pre">PotentialLocalUse</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.ProjectMetadataCheck"><code class="docutils literal notranslate"><span class="pre">ProjectMetadataCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.RedundantPackageUpdate"><code class="docutils literal notranslate"><span class="pre">RedundantPackageUpdate</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.UnknownLicenses"><code class="docutils literal notranslate"><span class="pre">UnknownLicenses</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.UnknownManifest"><code class="docutils literal notranslate"><span class="pre">UnknownManifest</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.UnnecessaryManifest"><code class="docutils literal notranslate"><span class="pre">UnnecessaryManifest</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.UnusedEclasses"><code class="docutils literal notranslate"><span class="pre">UnusedEclasses</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.UnusedEclassesCheck"><code class="docutils literal notranslate"><span class="pre">UnusedEclassesCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.UnusedGlobalUse"><code class="docutils literal notranslate"><span class="pre">UnusedGlobalUse</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.UnusedGlobalUseExpand"><code class="docutils literal notranslate"><span class="pre">UnusedGlobalUseExpand</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.UnusedLicenses"><code class="docutils literal notranslate"><span class="pre">UnusedLicenses</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.UnusedLicensesCheck"><code class="docutils literal notranslate"><span class="pre">UnusedLicensesCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.UnusedMirrors"><code class="docutils literal notranslate"><span class="pre">UnusedMirrors</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.repo_metadata.html#pkgcheck.checks.repo_metadata.UnusedMirrorsCheck"><code class="docutils literal notranslate"><span class="pre">UnusedMirrorsCheck</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.reserved.html">pkgcheck.checks.reserved module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.reserved.html#pkgcheck.checks.reserved.EbuildReservedCheck"><code class="docutils literal notranslate"><span class="pre">EbuildReservedCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.reserved.html#pkgcheck.checks.reserved.EbuildReservedName"><code class="docutils literal notranslate"><span class="pre">EbuildReservedName</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.reserved.html#pkgcheck.checks.reserved.EclassReservedCheck"><code class="docutils literal notranslate"><span class="pre">EclassReservedCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.reserved.html#pkgcheck.checks.reserved.EclassReservedName"><code class="docutils literal notranslate"><span class="pre">EclassReservedName</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.stablereq.html">pkgcheck.checks.stablereq module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.stablereq.html#pkgcheck.checks.stablereq.StableRequest"><code class="docutils literal notranslate"><span class="pre">StableRequest</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.stablereq.html#pkgcheck.checks.stablereq.StableRequestCheck"><code class="docutils literal notranslate"><span class="pre">StableRequestCheck</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.unstable_only.html">pkgcheck.checks.unstable_only module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.unstable_only.html#pkgcheck.checks.unstable_only.UnstableOnly"><code class="docutils literal notranslate"><span class="pre">UnstableOnly</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.unstable_only.html#pkgcheck.checks.unstable_only.UnstableOnlyCheck"><code class="docutils literal notranslate"><span class="pre">UnstableOnlyCheck</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.visibility.html">pkgcheck.checks.visibility module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.visibility.html#pkgcheck.checks.visibility.FakeConfigurable"><code class="docutils literal notranslate"><span class="pre">FakeConfigurable</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.visibility.html#pkgcheck.checks.visibility.NonexistentDeps"><code class="docutils literal notranslate"><span class="pre">NonexistentDeps</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.visibility.html#pkgcheck.checks.visibility.NonsolvableDeps"><code class="docutils literal notranslate"><span class="pre">NonsolvableDeps</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.visibility.html#pkgcheck.checks.visibility.NonsolvableDepsInDev"><code class="docutils literal notranslate"><span class="pre">NonsolvableDepsInDev</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.visibility.html#pkgcheck.checks.visibility.NonsolvableDepsInExp"><code class="docutils literal notranslate"><span class="pre">NonsolvableDepsInExp</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.visibility.html#pkgcheck.checks.visibility.NonsolvableDepsInStable"><code class="docutils literal notranslate"><span class="pre">NonsolvableDepsInStable</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.visibility.html#pkgcheck.checks.visibility.UncheckableDep"><code class="docutils literal notranslate"><span class="pre">UncheckableDep</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.visibility.html#pkgcheck.checks.visibility.VisibilityCheck"><code class="docutils literal notranslate"><span class="pre">VisibilityCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.visibility.html#pkgcheck.checks.visibility.VisibleVcsPkg"><code class="docutils literal notranslate"><span class="pre">VisibleVcsPkg</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.visibility.html#pkgcheck.checks.visibility.visit_atoms"><code class="docutils literal notranslate"><span class="pre">visit_atoms()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.whitespace.html">pkgcheck.checks.whitespace module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.whitespace.html#pkgcheck.checks.whitespace.BadWhitespaceCharacter"><code class="docutils literal notranslate"><span class="pre">BadWhitespaceCharacter</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.whitespace.html#pkgcheck.checks.whitespace.DoubleEmptyLine"><code class="docutils literal notranslate"><span class="pre">DoubleEmptyLine</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.whitespace.html#pkgcheck.checks.whitespace.NoFinalNewline"><code class="docutils literal notranslate"><span class="pre">NoFinalNewline</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.whitespace.html#pkgcheck.checks.whitespace.TrailingEmptyLine"><code class="docutils literal notranslate"><span class="pre">TrailingEmptyLine</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.whitespace.html#pkgcheck.checks.whitespace.WhitespaceCheck"><code class="docutils literal notranslate"><span class="pre">WhitespaceCheck</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.whitespace.html#pkgcheck.checks.whitespace.WhitespaceData"><code class="docutils literal notranslate"><span class="pre">WhitespaceData</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.whitespace.html#pkgcheck.checks.whitespace.WhitespaceFound"><code class="docutils literal notranslate"><span class="pre">WhitespaceFound</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.whitespace.html#pkgcheck.checks.whitespace.WrongIndentFound"><code class="docutils literal notranslate"><span class="pre">WrongIndentFound</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.checks.html#module-pkgcheck.checks">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.AsyncCheck"><code class="docutils literal notranslate"><span class="pre">AsyncCheck</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.AsyncCheck.runner_cls"><code class="docutils literal notranslate"><span class="pre">AsyncCheck.runner_cls</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.AsyncCheck.scope"><code class="docutils literal notranslate"><span class="pre">AsyncCheck.scope</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.Check"><code class="docutils literal notranslate"><span class="pre">Check</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.Check.known_results"><code class="docutils literal notranslate"><span class="pre">Check.known_results</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.Check.priority"><code class="docutils literal notranslate"><span class="pre">Check.priority</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.Check.runner_cls"><code class="docutils literal notranslate"><span class="pre">Check.runner_cls</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.Check.scope"><code class="docutils literal notranslate"><span class="pre">Check.scope</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.Check.source"><code class="docutils literal notranslate"><span class="pre">Check.source</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.GentooRepoCheck"><code class="docutils literal notranslate"><span class="pre">GentooRepoCheck</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.GentooRepoCheck.scope"><code class="docutils literal notranslate"><span class="pre">GentooRepoCheck.scope</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.GitCommitsCheck"><code class="docutils literal notranslate"><span class="pre">GitCommitsCheck</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.GitCommitsCheck.scope"><code class="docutils literal notranslate"><span class="pre">GitCommitsCheck.scope</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.MirrorsCheck"><code class="docutils literal notranslate"><span class="pre">MirrorsCheck</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.MirrorsCheck.get_mirrors"><code class="docutils literal notranslate"><span class="pre">MirrorsCheck.get_mirrors()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.MirrorsCheck.required_addons"><code class="docutils literal notranslate"><span class="pre">MirrorsCheck.required_addons</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.MirrorsCheck.scope"><code class="docutils literal notranslate"><span class="pre">MirrorsCheck.scope</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.NetworkCheck"><code class="docutils literal notranslate"><span class="pre">NetworkCheck</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.NetworkCheck.required_addons"><code class="docutils literal notranslate"><span class="pre">NetworkCheck.required_addons</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.NetworkCheck.scope"><code class="docutils literal notranslate"><span class="pre">NetworkCheck.scope</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.OptionalCheck"><code class="docutils literal notranslate"><span class="pre">OptionalCheck</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.OptionalCheck.scope"><code class="docutils literal notranslate"><span class="pre">OptionalCheck.scope</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.OverlayRepoCheck"><code class="docutils literal notranslate"><span class="pre">OverlayRepoCheck</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.OverlayRepoCheck.scope"><code class="docutils literal notranslate"><span class="pre">OverlayRepoCheck.scope</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.RepoCheck"><code class="docutils literal notranslate"><span class="pre">RepoCheck</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.RepoCheck.finish"><code class="docutils literal notranslate"><span class="pre">RepoCheck.finish()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.RepoCheck.runner_cls"><code class="docutils literal notranslate"><span class="pre">RepoCheck.runner_cls</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.RepoCheck.scope"><code class="docutils literal notranslate"><span class="pre">RepoCheck.scope</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.RepoCheck.start"><code class="docutils literal notranslate"><span class="pre">RepoCheck.start()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.SkipCheck"><code class="docutils literal notranslate"><span class="pre">SkipCheck</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.checks.html#pkgcheck.checks.init_checks"><code class="docutils literal notranslate"><span class="pre">init_checks()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pkgcheck.api.html">pkgcheck.api module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.api.html#pkgcheck.api.scan"><code class="docutils literal notranslate"><span class="pre">scan()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pkgcheck.base.html">pkgcheck.base module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.base.html#pkgcheck.base.Addon"><code class="docutils literal notranslate"><span class="pre">Addon</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.base.html#pkgcheck.base.Addon.mangle_argparser"><code class="docutils literal notranslate"><span class="pre">Addon.mangle_argparser()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.base.html#pkgcheck.base.Addon.required_addons"><code class="docutils literal notranslate"><span class="pre">Addon.required_addons</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.base.html#pkgcheck.base.ConditionalScope"><code class="docutils literal notranslate"><span class="pre">ConditionalScope</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.base.html#pkgcheck.base.ConditionalScope.level"><code class="docutils literal notranslate"><span class="pre">ConditionalScope.level</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.base.html#pkgcheck.base.LocationScope"><code class="docutils literal notranslate"><span class="pre">LocationScope</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.base.html#pkgcheck.base.LocationScope.level"><code class="docutils literal notranslate"><span class="pre">LocationScope.level</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.base.html#pkgcheck.base.LogMap"><code class="docutils literal notranslate"><span class="pre">LogMap</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.base.html#pkgcheck.base.LogMap.call"><code class="docutils literal notranslate"><span class="pre">LogMap.call</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.base.html#pkgcheck.base.LogMap.func"><code class="docutils literal notranslate"><span class="pre">LogMap.func</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.base.html#pkgcheck.base.LogReports"><code class="docutils literal notranslate"><span class="pre">LogReports()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.base.html#pkgcheck.base.PackageScope"><code class="docutils literal notranslate"><span class="pre">PackageScope</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.base.html#pkgcheck.base.PackageScope.desc"><code class="docutils literal notranslate"><span class="pre">PackageScope.desc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.base.html#pkgcheck.base.PackageScope.level"><code class="docutils literal notranslate"><span class="pre">PackageScope.level</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.base.html#pkgcheck.base.PkgcheckException"><code class="docutils literal notranslate"><span class="pre">PkgcheckException</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.base.html#pkgcheck.base.PkgcheckUserException"><code class="docutils literal notranslate"><span class="pre">PkgcheckUserException</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.base.html#pkgcheck.base.ProgressManager"><code class="docutils literal notranslate"><span class="pre">ProgressManager</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.base.html#pkgcheck.base.Scope"><code class="docutils literal notranslate"><span class="pre">Scope</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.base.html#pkgcheck.base.Scope.desc"><code class="docutils literal notranslate"><span class="pre">Scope.desc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.base.html#pkgcheck.base.Scope.level"><code class="docutils literal notranslate"><span class="pre">Scope.level</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.base.html#pkgcheck.base.get_addons"><code class="docutils literal notranslate"><span class="pre">get_addons()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.base.html#pkgcheck.base.param_name"><code class="docutils literal notranslate"><span class="pre">param_name()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pkgcheck.cli.html">pkgcheck.cli module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.cli.html#pkgcheck.cli.ConfigFileParser"><code class="docutils literal notranslate"><span class="pre">ConfigFileParser</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.cli.html#pkgcheck.cli.ConfigFileParser.config"><code class="docutils literal notranslate"><span class="pre">ConfigFileParser.config</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.cli.html#pkgcheck.cli.ConfigFileParser.default_configs"><code class="docutils literal notranslate"><span class="pre">ConfigFileParser.default_configs</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.cli.html#pkgcheck.cli.ConfigFileParser.parse_config"><code class="docutils literal notranslate"><span class="pre">ConfigFileParser.parse_config()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.cli.html#pkgcheck.cli.ConfigFileParser.parse_config_options"><code class="docutils literal notranslate"><span class="pre">ConfigFileParser.parse_config_options()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.cli.html#pkgcheck.cli.ConfigFileParser.parse_config_sections"><code class="docutils literal notranslate"><span class="pre">ConfigFileParser.parse_config_sections()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.cli.html#pkgcheck.cli.ConfigParser"><code class="docutils literal notranslate"><span class="pre">ConfigParser</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.cli.html#pkgcheck.cli.ConfigParser.optionxform"><code class="docutils literal notranslate"><span class="pre">ConfigParser.optionxform()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.cli.html#pkgcheck.cli.Tool"><code class="docutils literal notranslate"><span class="pre">Tool</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.cli.html#pkgcheck.cli.Tool.main"><code class="docutils literal notranslate"><span class="pre">Tool.main()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pkgcheck.const.html">pkgcheck.const module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pkgcheck.feeds.html">pkgcheck.feeds module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.feeds.html#pkgcheck.feeds.EvaluateDepSet"><code class="docutils literal notranslate"><span class="pre">EvaluateDepSet</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.feeds.html#pkgcheck.feeds.EvaluateDepSet.collapse_evaluate_depset"><code class="docutils literal notranslate"><span class="pre">EvaluateDepSet.collapse_evaluate_depset()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.feeds.html#pkgcheck.feeds.EvaluateDepSet.feed"><code class="docutils literal notranslate"><span class="pre">EvaluateDepSet.feed()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.feeds.html#pkgcheck.feeds.EvaluateDepSet.scope"><code class="docutils literal notranslate"><span class="pre">EvaluateDepSet.scope</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.feeds.html#pkgcheck.feeds.Feed"><code class="docutils literal notranslate"><span class="pre">Feed</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.feeds.html#pkgcheck.feeds.Feed.feed"><code class="docutils literal notranslate"><span class="pre">Feed.feed()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.feeds.html#pkgcheck.feeds.Feed.source"><code class="docutils literal notranslate"><span class="pre">Feed.source</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.feeds.html#pkgcheck.feeds.QueryCache"><code class="docutils literal notranslate"><span class="pre">QueryCache</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.feeds.html#pkgcheck.feeds.QueryCache.feed"><code class="docutils literal notranslate"><span class="pre">QueryCache.feed()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.feeds.html#pkgcheck.feeds.QueryCache.mangle_argparser"><code class="docutils literal notranslate"><span class="pre">QueryCache.mangle_argparser()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.feeds.html#pkgcheck.feeds.QueryCache.scope"><code class="docutils literal notranslate"><span class="pre">QueryCache.scope</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pkgcheck.log.html">pkgcheck.log module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pkgcheck.objects.html">pkgcheck.objects module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pkgcheck.packages.html">pkgcheck.packages module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.packages.html#pkgcheck.packages.FilteredPkg"><code class="docutils literal notranslate"><span class="pre">FilteredPkg</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.packages.html#pkgcheck.packages.RawCPV"><code class="docutils literal notranslate"><span class="pre">RawCPV</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.packages.html#pkgcheck.packages.RawCPV.category"><code class="docutils literal notranslate"><span class="pre">RawCPV.category</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.packages.html#pkgcheck.packages.RawCPV.fullver"><code class="docutils literal notranslate"><span class="pre">RawCPV.fullver</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.packages.html#pkgcheck.packages.RawCPV.key"><code class="docutils literal notranslate"><span class="pre">RawCPV.key</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.packages.html#pkgcheck.packages.RawCPV.package"><code class="docutils literal notranslate"><span class="pre">RawCPV.package</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.packages.html#pkgcheck.packages.RawCPV.revision"><code class="docutils literal notranslate"><span class="pre">RawCPV.revision</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.packages.html#pkgcheck.packages.RawCPV.unversioned_atom"><code class="docutils literal notranslate"><span class="pre">RawCPV.unversioned_atom</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.packages.html#pkgcheck.packages.RawCPV.version"><code class="docutils literal notranslate"><span class="pre">RawCPV.version</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.packages.html#pkgcheck.packages.RawCPV.versioned_atom"><code class="docutils literal notranslate"><span class="pre">RawCPV.versioned_atom</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.packages.html#pkgcheck.packages.WrappedPkg"><code class="docutils literal notranslate"><span class="pre">WrappedPkg</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pkgcheck.pipeline.html">pkgcheck.pipeline module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.pipeline.html#pkgcheck.pipeline.Pipeline"><code class="docutils literal notranslate"><span class="pre">Pipeline</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pkgcheck.reporters.html">pkgcheck.reporters module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.reporters.html#pkgcheck.reporters.CsvReporter"><code class="docutils literal notranslate"><span class="pre">CsvReporter</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.reporters.html#pkgcheck.reporters.CsvReporter.priority"><code class="docutils literal notranslate"><span class="pre">CsvReporter.priority</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.reporters.html#pkgcheck.reporters.DeserializationError"><code class="docutils literal notranslate"><span class="pre">DeserializationError</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.reporters.html#pkgcheck.reporters.FancyReporter"><code class="docutils literal notranslate"><span class="pre">FancyReporter</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.reporters.html#pkgcheck.reporters.FancyReporter.priority"><code class="docutils literal notranslate"><span class="pre">FancyReporter.priority</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.reporters.html#pkgcheck.reporters.FlycheckReporter"><code class="docutils literal notranslate"><span class="pre">FlycheckReporter</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.reporters.html#pkgcheck.reporters.FlycheckReporter.priority"><code class="docutils literal notranslate"><span class="pre">FlycheckReporter.priority</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.reporters.html#pkgcheck.reporters.FormatReporter"><code class="docutils literal notranslate"><span class="pre">FormatReporter</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.reporters.html#pkgcheck.reporters.FormatReporter.priority"><code class="docutils literal notranslate"><span class="pre">FormatReporter.priority</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.reporters.html#pkgcheck.reporters.JsonReporter"><code class="docutils literal notranslate"><span class="pre">JsonReporter</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.reporters.html#pkgcheck.reporters.JsonReporter.priority"><code class="docutils literal notranslate"><span class="pre">JsonReporter.priority</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.reporters.html#pkgcheck.reporters.JsonStream"><code class="docutils literal notranslate"><span class="pre">JsonStream</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.reporters.html#pkgcheck.reporters.JsonStream.from_iter"><code class="docutils literal notranslate"><span class="pre">JsonStream.from_iter()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.reporters.html#pkgcheck.reporters.JsonStream.priority"><code class="docutils literal notranslate"><span class="pre">JsonStream.priority</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.reporters.html#pkgcheck.reporters.JsonStream.to_json"><code class="docutils literal notranslate"><span class="pre">JsonStream.to_json()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.reporters.html#pkgcheck.reporters.Reporter"><code class="docutils literal notranslate"><span class="pre">Reporter</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.reporters.html#pkgcheck.reporters.StrReporter"><code class="docutils literal notranslate"><span class="pre">StrReporter</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.reporters.html#pkgcheck.reporters.StrReporter.priority"><code class="docutils literal notranslate"><span class="pre">StrReporter.priority</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.reporters.html#pkgcheck.reporters.XmlReporter"><code class="docutils literal notranslate"><span class="pre">XmlReporter</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.reporters.html#pkgcheck.reporters.XmlReporter.priority"><code class="docutils literal notranslate"><span class="pre">XmlReporter.priority</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pkgcheck.results.html">pkgcheck.results module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.AliasResult"><code class="docutils literal notranslate"><span class="pre">AliasResult</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.AliasResult.name"><code class="docutils literal notranslate"><span class="pre">AliasResult.name</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.CategoryResult"><code class="docutils literal notranslate"><span class="pre">CategoryResult</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.CategoryResult.name"><code class="docutils literal notranslate"><span class="pre">CategoryResult.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.CategoryResult.scope"><code class="docutils literal notranslate"><span class="pre">CategoryResult.scope</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.CommitResult"><code class="docutils literal notranslate"><span class="pre">CommitResult</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.CommitResult.name"><code class="docutils literal notranslate"><span class="pre">CommitResult.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.CommitResult.scope"><code class="docutils literal notranslate"><span class="pre">CommitResult.scope</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.EclassResult"><code class="docutils literal notranslate"><span class="pre">EclassResult</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.EclassResult.name"><code class="docutils literal notranslate"><span class="pre">EclassResult.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.EclassResult.scope"><code class="docutils literal notranslate"><span class="pre">EclassResult.scope</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.Error"><code class="docutils literal notranslate"><span class="pre">Error</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.Error.color"><code class="docutils literal notranslate"><span class="pre">Error.color</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.Error.level"><code class="docutils literal notranslate"><span class="pre">Error.level</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.Error.name"><code class="docutils literal notranslate"><span class="pre">Error.name</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.Info"><code class="docutils literal notranslate"><span class="pre">Info</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.Info.color"><code class="docutils literal notranslate"><span class="pre">Info.color</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.Info.level"><code class="docutils literal notranslate"><span class="pre">Info.level</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.Info.name"><code class="docutils literal notranslate"><span class="pre">Info.name</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.InvalidResult"><code class="docutils literal notranslate"><span class="pre">InvalidResult</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.LineResult"><code class="docutils literal notranslate"><span class="pre">LineResult</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.LineResult.name"><code class="docutils literal notranslate"><span class="pre">LineResult.name</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.LogError"><code class="docutils literal notranslate"><span class="pre">LogError</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.LogError.name"><code class="docutils literal notranslate"><span class="pre">LogError.name</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.LogWarning"><code class="docutils literal notranslate"><span class="pre">LogWarning</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.LogWarning.name"><code class="docutils literal notranslate"><span class="pre">LogWarning.name</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.MetadataError"><code class="docutils literal notranslate"><span class="pre">MetadataError</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.MetadataError.attr"><code class="docutils literal notranslate"><span class="pre">MetadataError.attr</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.MetadataError.desc"><code class="docutils literal notranslate"><span class="pre">MetadataError.desc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.MetadataError.name"><code class="docutils literal notranslate"><span class="pre">MetadataError.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.MetadataError.results"><code class="docutils literal notranslate"><span class="pre">MetadataError.results</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.PackageResult"><code class="docutils literal notranslate"><span class="pre">PackageResult</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.PackageResult.name"><code class="docutils literal notranslate"><span class="pre">PackageResult.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.PackageResult.scope"><code class="docutils literal notranslate"><span class="pre">PackageResult.scope</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.ProfilesResult"><code class="docutils literal notranslate"><span class="pre">ProfilesResult</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.ProfilesResult.name"><code class="docutils literal notranslate"><span class="pre">ProfilesResult.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.ProfilesResult.scope"><code class="docutils literal notranslate"><span class="pre">ProfilesResult.scope</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.Result"><code class="docutils literal notranslate"><span class="pre">Result</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.Result.color"><code class="docutils literal notranslate"><span class="pre">Result.color</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.Result.desc"><code class="docutils literal notranslate"><span class="pre">Result.desc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.Result.level"><code class="docutils literal notranslate"><span class="pre">Result.level</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.Result.scope"><code class="docutils literal notranslate"><span class="pre">Result.scope</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.Style"><code class="docutils literal notranslate"><span class="pre">Style</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.Style.color"><code class="docutils literal notranslate"><span class="pre">Style.color</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.Style.level"><code class="docutils literal notranslate"><span class="pre">Style.level</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.Style.name"><code class="docutils literal notranslate"><span class="pre">Style.name</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.VersionResult"><code class="docutils literal notranslate"><span class="pre">VersionResult</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.VersionResult.name"><code class="docutils literal notranslate"><span class="pre">VersionResult.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.VersionResult.scope"><code class="docutils literal notranslate"><span class="pre">VersionResult.scope</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.VersionResult.ver_rev"><code class="docutils literal notranslate"><span class="pre">VersionResult.ver_rev</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.Warning"><code class="docutils literal notranslate"><span class="pre">Warning</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.Warning.color"><code class="docutils literal notranslate"><span class="pre">Warning.color</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.Warning.level"><code class="docutils literal notranslate"><span class="pre">Warning.level</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.results.html#pkgcheck.results.Warning.name"><code class="docutils literal notranslate"><span class="pre">Warning.name</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pkgcheck.runners.html">pkgcheck.runners module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.runners.html#pkgcheck.runners.AsyncCheckRunner"><code class="docutils literal notranslate"><span class="pre">AsyncCheckRunner</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.runners.html#pkgcheck.runners.AsyncCheckRunner.schedule"><code class="docutils literal notranslate"><span class="pre">AsyncCheckRunner.schedule()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.runners.html#pkgcheck.runners.AsyncCheckRunner.type"><code class="docutils literal notranslate"><span class="pre">AsyncCheckRunner.type</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.runners.html#pkgcheck.runners.CheckRunner"><code class="docutils literal notranslate"><span class="pre">CheckRunner</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.runners.html#pkgcheck.runners.CheckRunner.type"><code class="docutils literal notranslate"><span class="pre">CheckRunner.type</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.runners.html#pkgcheck.runners.RepoCheckRunner"><code class="docutils literal notranslate"><span class="pre">RepoCheckRunner</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.runners.html#pkgcheck.runners.RepoCheckRunner.run"><code class="docutils literal notranslate"><span class="pre">RepoCheckRunner.run()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.runners.html#pkgcheck.runners.SyncCheckRunner"><code class="docutils literal notranslate"><span class="pre">SyncCheckRunner</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.runners.html#pkgcheck.runners.SyncCheckRunner.run"><code class="docutils literal notranslate"><span class="pre">SyncCheckRunner.run()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.runners.html#pkgcheck.runners.SyncCheckRunner.type"><code class="docutils literal notranslate"><span class="pre">SyncCheckRunner.type</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pkgcheck.sources.html">pkgcheck.sources module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.CategoryRepoSource"><code class="docutils literal notranslate"><span class="pre">CategoryRepoSource</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.CategoryRepoSource.keyfunc"><code class="docutils literal notranslate"><span class="pre">CategoryRepoSource.keyfunc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.CategoryRepoSource.scope"><code class="docutils literal notranslate"><span class="pre">CategoryRepoSource.scope</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.EbuildFileRepoSource"><code class="docutils literal notranslate"><span class="pre">EbuildFileRepoSource</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.EbuildFileRepoSource.itermatch"><code class="docutils literal notranslate"><span class="pre">EbuildFileRepoSource.itermatch()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.EbuildParseRepoSource"><code class="docutils literal notranslate"><span class="pre">EbuildParseRepoSource</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.EbuildParseRepoSource.itermatch"><code class="docutils literal notranslate"><span class="pre">EbuildParseRepoSource.itermatch()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.EclassParseRepoSource"><code class="docutils literal notranslate"><span class="pre">EclassParseRepoSource</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.EclassParseRepoSource.itermatch"><code class="docutils literal notranslate"><span class="pre">EclassParseRepoSource.itermatch()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.EclassRepoSource"><code class="docutils literal notranslate"><span class="pre">EclassRepoSource</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.EclassRepoSource.itermatch"><code class="docutils literal notranslate"><span class="pre">EclassRepoSource.itermatch()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.EclassRepoSource.required_addons"><code class="docutils literal notranslate"><span class="pre">EclassRepoSource.required_addons</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.EclassRepoSource.scope"><code class="docutils literal notranslate"><span class="pre">EclassRepoSource.scope</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.EmptySource"><code class="docutils literal notranslate"><span class="pre">EmptySource</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.FilteredPackageRepoSource"><code class="docutils literal notranslate"><span class="pre">FilteredPackageRepoSource</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.FilteredPackageRepoSource.scope"><code class="docutils literal notranslate"><span class="pre">FilteredPackageRepoSource.scope</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.FilteredRepoSource"><code class="docutils literal notranslate"><span class="pre">FilteredRepoSource</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.FilteredRepoSource.itermatch"><code class="docutils literal notranslate"><span class="pre">FilteredRepoSource.itermatch()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.LatestPkgsFilter"><code class="docutils literal notranslate"><span class="pre">LatestPkgsFilter</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.LatestVersionRepoSource"><code class="docutils literal notranslate"><span class="pre">LatestVersionRepoSource</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.LatestVersionRepoSource.itermatch"><code class="docutils literal notranslate"><span class="pre">LatestVersionRepoSource.itermatch()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.LatestVersionsFilter"><code class="docutils literal notranslate"><span class="pre">LatestVersionsFilter</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.PackageRepoSource"><code class="docutils literal notranslate"><span class="pre">PackageRepoSource</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.PackageRepoSource.keyfunc"><code class="docutils literal notranslate"><span class="pre">PackageRepoSource.keyfunc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.PackageRepoSource.scope"><code class="docutils literal notranslate"><span class="pre">PackageRepoSource.scope</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.Profile"><code class="docutils literal notranslate"><span class="pre">Profile</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.Profile.files"><code class="docutils literal notranslate"><span class="pre">Profile.files</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.Profile.node"><code class="docutils literal notranslate"><span class="pre">Profile.node</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.ProfilesRepoSource"><code class="docutils literal notranslate"><span class="pre">ProfilesRepoSource</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.ProfilesRepoSource.itermatch"><code class="docutils literal notranslate"><span class="pre">ProfilesRepoSource.itermatch()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.ProfilesRepoSource.scope"><code class="docutils literal notranslate"><span class="pre">ProfilesRepoSource.scope</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.RawRepoSource"><code class="docutils literal notranslate"><span class="pre">RawRepoSource</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.RawRepoSource.itermatch"><code class="docutils literal notranslate"><span class="pre">RawRepoSource.itermatch()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.RepoSource"><code class="docutils literal notranslate"><span class="pre">RepoSource</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.RepoSource.itermatch"><code class="docutils literal notranslate"><span class="pre">RepoSource.itermatch()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.RepoSource.scope"><code class="docutils literal notranslate"><span class="pre">RepoSource.scope</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.RepositoryRepoSource"><code class="docutils literal notranslate"><span class="pre">RepositoryRepoSource</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.RepositoryRepoSource.scope"><code class="docutils literal notranslate"><span class="pre">RepositoryRepoSource.scope</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.RestrictionRepoSource"><code class="docutils literal notranslate"><span class="pre">RestrictionRepoSource</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.RestrictionRepoSource.itermatch"><code class="docutils literal notranslate"><span class="pre">RestrictionRepoSource.itermatch()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.Source"><code class="docutils literal notranslate"><span class="pre">Source</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.Source.itermatch"><code class="docutils literal notranslate"><span class="pre">Source.itermatch()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.Source.required_addons"><code class="docutils literal notranslate"><span class="pre">Source.required_addons</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.Source.scope"><code class="docutils literal notranslate"><span class="pre">Source.scope</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.UnmaskedRepoSource"><code class="docutils literal notranslate"><span class="pre">UnmaskedRepoSource</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.UnmaskedRepoSource.itermatch"><code class="docutils literal notranslate"><span class="pre">UnmaskedRepoSource.itermatch()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.UnversionedSource"><code class="docutils literal notranslate"><span class="pre">UnversionedSource</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.UnversionedSource.keyfunc"><code class="docutils literal notranslate"><span class="pre">UnversionedSource.keyfunc</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.VersionedSource"><code class="docutils literal notranslate"><span class="pre">VersionedSource</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.VersionedSource.keyfunc"><code class="docutils literal notranslate"><span class="pre">VersionedSource.keyfunc</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.sources.html#pkgcheck.sources.init_source"><code class="docutils literal notranslate"><span class="pre">init_source()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pkgcheck.utils.html">pkgcheck.utils module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pkgcheck.utils.html#pkgcheck.utils.is_binary"><code class="docutils literal notranslate"><span class="pre">is_binary()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="module-pkgcheck">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pkgcheck" title="Permalink to this heading">¶</a></h2>
+<dl class="py exception">
+<dt class="sig sig-object py" id="pkgcheck.PkgcheckException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pkgcheck.</span></span><span class="sig-name descname"><span class="pre">PkgcheckException</span></span><a class="reference internal" href="../_modules/pkgcheck/base.html#PkgcheckException"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pkgcheck.PkgcheckException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Generic pkgcheck exception.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pkgcheck.Result">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pkgcheck.</span></span><span class="sig-name descname"><span class="pre">Result</span></span><a class="reference internal" href="../_modules/pkgcheck/results.html#Result"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pkgcheck.Result" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Generic report result returned from a check.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pkgcheck.Result.color">
+<span class="sig-name descname"><span class="pre">color</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#pkgcheck.Result.color" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pkgcheck.Result.desc">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">desc</span></span><a class="headerlink" href="#pkgcheck.Result.desc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Result description.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pkgcheck.Result.level">
+<span class="sig-name descname"><span class="pre">level</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#pkgcheck.Result.level" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pkgcheck.Result.scope">
+<span class="sig-name descname"><span class="pre">scope</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;PackageScope</span> <span class="pre">desc='repo'</span> <span class="pre">&#64;0x7efd241a38e0&gt;</span></em><a class="headerlink" href="#pkgcheck.Result.scope" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pkgcheck.scan">
+<span class="sig-prename descclassname"><span class="pre">pkgcheck.</span></span><span class="sig-name descname"><span class="pre">scan</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">/</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">base_args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pkgcheck/api.html#scan"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pkgcheck.scan" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run <code class="docutils literal notranslate"><span class="pre">pkgcheck</span> <span class="pre">scan</span></code> using given arguments.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>args (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code>, optional): command-line args for <code class="docutils literal notranslate"><span class="pre">pkgcheck</span> <span class="pre">scan</span></code>
+base_args (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code>, optional): pkgcore-specific command-line args for <code class="docutils literal notranslate"><span class="pre">pkgcheck</span></code></p>
+</dd>
+<dt>Raises:</dt><dd><p>PkgcheckException on failure</p>
+</dd>
+<dt>Returns:</dt><dd><p>iterator of Result objects</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">pkgcheck package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-pkgcheck">Module contents</a><ul>
+<li><a class="reference internal" href="#pkgcheck.PkgcheckException"><code class="docutils literal notranslate"><span class="pre">PkgcheckException</span></code></a></li>
+<li><a class="reference internal" href="#pkgcheck.Result"><code class="docutils literal notranslate"><span class="pre">Result</span></code></a><ul>
+<li><a class="reference internal" href="#pkgcheck.Result.color"><code class="docutils literal notranslate"><span class="pre">Result.color</span></code></a></li>
+<li><a class="reference internal" href="#pkgcheck.Result.desc"><code class="docutils literal notranslate"><span class="pre">Result.desc</span></code></a></li>
+<li><a class="reference internal" href="#pkgcheck.Result.level"><code class="docutils literal notranslate"><span class="pre">Result.level</span></code></a></li>
+<li><a class="reference internal" href="#pkgcheck.Result.scope"><code class="docutils literal notranslate"><span class="pre">Result.scope</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#pkgcheck.scan"><code class="docutils literal notranslate"><span class="pre">scan()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/api/pkgcheck.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pkgcheck master documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">pkgcheck package</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2006-2021, pkgcheck contributors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
+    </div>
+  </body>
+</html>
